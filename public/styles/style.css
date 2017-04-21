@@ -127,3 +127,36 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 * {
   box-sizing: border-box; }
+
+h1 {
+  font-size: 48px;
+  font-family: 'Noto Serif', serif; }
+
+h2 {
+  font-size: 36px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 20px; }
+
+h5 {
+  font-size: 16px; }
+
+nav {
+  font-family: 'Noto Sans';
+  font-size: 16px; }
+
+.subheading {
+  font-size: 26px;
+  font-family: 'Noto Sans'; }
+
+button {
+  font-size: 16px; }
+
+p {
+  font-family: 'Ubuntu'; }
+
+.fa {
+  font-size: 16px; }
