@@ -2,23 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kode Hotel</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700|Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" href="public/styles/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<header>
 <div class="upper-nav">
-	<i class="fa fa-envelope" aria-hidden="true"></i>
-	<i class="fa fa-phone" aria-hidden="true"></i>
-	<i class="fa fa-user" aria-hidden="true"></i>
-	<i class="fa fa-male" aria-hidden="true"></i>
+	<div class="wrapper">
+		<div class="upper-nav-left">
+			<i class="fa fa-envelope" aria-hidden="true">Info@gmail.com</i>
+			<i class="fa fa-phone" aria-hidden="true">(604) 777 5748</i>
+		</div>
+		<div class="upper-nav-right">
+			<i class="fa fa-user" aria-hidden="true">Login</i>
+			<i class="fa fa-male" aria-hidden="true">Register</i>
+		</div>
+	</div>
 </div>
-	<nav>
+<nav>
+	<div class="wrapper">
 		<img src="assets/logo.png" alt="" class="logo">
-		<ul>
+		<ul class="nav-items">
 			<li><a href="">Home</a></li>
 			<li><a href="">About Us</a></li>
 			<li><a href="">Gallery</a></li>
@@ -26,8 +33,11 @@
 			<li><a href="">Contact Us</a></li>
 		</ul>
 		<i class="fa fa-search" aria-hidden="true"></i>
-		<button>Book Now</button>
-	</nav>
+		<button class="btn">Book Now</button>
+	</div>
+</nav>
+<header>
+<div class="wrapper">
 	<div class="header-content">
 		<p class="subheading">Welcome To Our Luxury Hotel</p>
 		<h1>Book Your Holidays at <span class="red">Dream</span> Location</h1>
@@ -35,24 +45,26 @@
 	<div class="header-bar">
 		<form action="">
 			<div class="header-booking header-arrival">
-				
+				<input type="date">
+
 			</div>
 			<div class="header-booking header-departure">
-				
+				<input type="text">
 			</div>
 			<div class="header-booking header-people">
-				
+				<input type="text">
 			</div>
 			<button type="submit">
 				Book Now <i class="fa fa-arrow-right" aria-hidden="true"></i>
 			</button>
 		</form>
 	</div>
+</div>
 	<i class="fa fa-angle-down" aria-hidden="true"></i>
 </header>
 
 <main>
-<section>
+<section class="section offers">
 <div class="wrapper">
 	<h2>Our Special Offers</h2>
 
@@ -65,27 +77,29 @@
 			<div class="box-price">
 				<h5>From</h5>
 				<h2 class="feature-price">$99</h2>
-				<button>Book Now</button>
+				<button class="btn">Book Now</button>
 			</div>
 		</div>
-		<div class="box box1">
-			<p>Groups & Entertainment</p>
-		</div>
-		<div class="box box2">
-			<p>Outdoor Swimming Pool</p>
-		</div>
-		<div class="box box3">
-			<p>Gym & Sports</p>
-		</div>
-		<div class="box box4">
-			<p>Buffet & Restaurant</p>
+		<div class="box box-sub">
+			<div class="box box1">
+				<p>Groups & Entertainment</p>
+			</div>
+			<div class="box box2">
+				<p>Outdoor Swimming Pool</p>
+			</div>
+			<div class="box box3">
+				<p>Gym & Sports</p>
+			</div>
+			<div class="box box4">
+				<p>Buffet & Restaurant</p>
+			</div>
 		</div>
 	</div>
 	
 </div>
 </section>
 
-<section>
+<section class="section welcome">
 <div class="wrapper">
 	<h2>Welcome To Our Hotel</h2>
 	<div class="content-box">
@@ -108,10 +122,10 @@
 			</div>
 		</div>
 		<div class="amenities-detail">
-			<div>
-				<img src="assets/our-room1.jpg" alt="">
+			<div class="detail-image">
+				<img src="assets/services-tab-1.jpg" alt="">
 			</div>
-			<div>
+			<div class="detail-description">
 				<h5>The World Class</h5>
 				<h4>Restaurant & Cafe</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum inventore rerum ea quis, saepe molestias quidem ratione sint quo assumenda necessitatibus ipsum accusamus porro, perspiciatis veniam commodi rem illum aut reprehenderit mollitia consectetur, repellat eaque ab ullam. Earum, soluta, debitis?</p>
@@ -127,11 +141,11 @@
 </div>
 </section>
 
-<section>
+<section class="section staffing">
 <div class="wrapper">
 	<h2>Our Special Staff</h2>
 	<div class="content-box">
-		<div class="staff">
+		<div class="staff staff1">
 			<div class="staff-overlay">
 				<h4>Anna Doe</h4>
 				<i class="fa fa-facebook" aria-hidden="true"></i>
@@ -142,7 +156,7 @@
 				<i class="fa fa-arrow-right" aria-hidden="true"></i>
 			</div>
 		</div>
-		<div class="staff">
+		<div class="staff staff2">
 			<div class="staff-overlay">
 				<h4>Anna Doe</h4>
 				<i class="fa fa-facebook" aria-hidden="true"></i>
@@ -153,7 +167,7 @@
 				<i class="fa fa-arrow-right" aria-hidden="true"></i>
 			</div>
 		</div>
-		<div class="staff">
+		<div class="staff staff3">
 			<div class="staff-overlay">
 				<h4>Anna Doe</h4>
 				<i class="fa fa-facebook" aria-hidden="true"></i>
